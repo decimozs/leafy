@@ -1,0 +1,96 @@
+.Container{
+    padding: 1rem 0;
+    width: 100%;
+    height: 100vh;
+
+    .Content{
+        margin-top: -4rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 2rem;
+
+        .Why{
+            margin: auto;
+
+            .Reasons{
+                color: var(--green-dark-clr);
+                font-family: 'Archivo';
+                text-align: right;
+
+                @media (min-width: 1200px){
+                    font-size: 5rem;
+                }
+            }
+
+            .ReasonsWhy{
+                margin-bottom: 2rem;
+                text-align: right;
+                font-size: 3rem;
+                color: var(--black-clr);
+                font-family: 'Archivo';
+                font-weight: var(--text-black-fw);
+
+                .QuestionMark{
+                    color: var(--green-dark-clr);
+                }
+            }
+
+        }
+
+        .WhySnippets{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            font-size: 1.4rem;
+
+            @media (min-width: 1200px){
+                font-size: 1.5rem;
+            }
+
+            .WhyNumbers{
+                color: var(--green-light-clr);
+                font-family: 'Archivo';
+                font-size: 1rem;
+                font-weight: var(--text-black-fw);
+            }
+        }
+    }
+    .HelpusButton{
+        margin-left: auto;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        background: var(--green-dark-clr);
+        padding: 10px 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 8px;
+        transition: 0.4s ease-in-out;
+
+        &:hover{
+            background: var(--hover-clr);
+        }
+
+        a{
+            font-family: 'Archivo';
+            font-weight: var(--text-bold-fw);
+            color: var(--white-clr);
+        }
+
+        @media (min-width: 768px){
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .Back{
+        position: absolute;
+        bottom: 2rem;
+        left: 10rem;
+    }
+}

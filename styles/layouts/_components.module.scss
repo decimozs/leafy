@@ -1,0 +1,182 @@
+.StyledWrapper{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1200px){
+        max-height: 2000px;
+        right: 0;
+        width: 45%;
+    }
+}
+
+.StyledWrapper1{
+    z-index: -1;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/discover-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: 992px){
+        display: flex;
+        width: 60%;
+        height: 100vh;
+    }
+}
+
+.StyledContainer{
+    width: 100%;
+    padding: 0.2rem 2rem;
+}
+
+.StyledContent{
+    width: 100%;
+    margin: auto;
+}
+
+.StyledContentTitle{
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    .StyledTitle{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+        
+        .Title{
+            font-size: 2rem;
+            font-family: 'Archivo';
+            font-weight: var(--text-black-fw);
+            color: var(--green-dark-clr);
+        }
+
+        .StyledTitleBars{
+            border-radius: 1rem;
+            width: 40px;
+            height: 5px;
+            background: var(--green-dark-clr);
+        }
+    }
+}
+
+.Navigations{
+    margin: auto;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header{
+    margin: auto;
+    width: 100%;
+    max-width: 1500px;
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    @media (min-width: 992px) {
+        margin-top: -5rem;
+        height: 100vh;
+    }
+
+}
+
+.Discover{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.StyledContainerDiscover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.StyledHelpusContent{
+    margin: auto;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.StyledContainerHelpus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/helpus-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.StyledAboutContainer{
+    background: var(--green-dark-clr);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.StyledAboutContent{
+    padding: 3rem 0;
+    margin: auto;
+}
+
+.StyledAboutContentTitle{
+    padding: 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+    .AboutTitle{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+        
+        .Title{
+            font-size: 2rem;
+            font-family: 'Archivo';
+            font-weight: var(--text-black-fw);
+            color: var(--white-clr);
+        }
+
+        .StyledTitleBars{
+            border-radius: 1rem;
+            width: 40px;
+            height: 5px;
+            background: var(--white-clr);
+        }
+    }
+}

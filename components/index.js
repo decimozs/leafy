@@ -1,0 +1,5 @@
+export { default as Navigations } from './Navigations'
+export { default as Header } from './Header'
+export { default as Discover } from './Discover'
+export { default as Helpus } from './Helpus'
+export { default as About } from './About'

@@ -1,0 +1,101 @@
+.About{
+    width: 100%;
+    max-width: 1500px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 4rem;
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        gap: 7rem;
+    }
+
+    .AboutContent1{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1rem;
+
+        @media (min-width: 768px){
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .WrapFollow{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+
+            h1{
+                color: var(--white-clr);
+                font-family: 'Archivo';
+                font-weight: var(--text-thin-fw);
+            }
+
+            .Socials{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 5px;
+
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .AboutContent2{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+
+        .AboutSnippets{
+            color: var(--white-clr);
+            font-family: 'Archivo';
+            font-weight: var(--text-thin-fw);
+            
+            @media (min-width: 1200px){
+                font-size: 3rem;
+                
+            }
+           
+        }
+
+        .Contacts{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 2rem;
+
+            .ContactInfo{
+                font-size: 0.8rem;
+                color: var(--white-clr);
+                font-weight: var(--text-thin-fw);
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 1rem;
+            }
+        }
+
+        .ContactUs{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 10px 1rem;
+            flex-direction: row;
+            gap: 1rem;
+            
+            a{
+                color: var(--green-light-clr);
+                font-family: 'Archivo';
+                font-weight: var(--text-bold-fw);
+            }
+        }
+    }
+}

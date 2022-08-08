@@ -1,0 +1,43 @@
+.StyledContentDiscover{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-inline: auto;
+
+    @media (min-width: 992px){
+        margin-top: -1rem;
+    }
+
+    .DiscoverSnippets{
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 600px;
+        font-family: 'Archivo';
+        font-size: 1.5rem;
+        font-weight: var(--text-black-fw);
+
+        @media (min-width: 992px){
+            font-size: 1.8rem;
+        }
+
+        .StyledNumbers{
+            font-size: 1rem;
+            font-weight: var(--text-thin-fw);
+            color: var(--green-light-clr);
+        }
+
+        .HighlighText{
+            color: var(--green-light-clr);
+        }
+    }
+    
+    .DiscoverSnippets:nth-child(2){
+        text-align: right;
+    }
+
+    .DiscoverSnippets:nth-child(4){
+        text-align: right;
+    }
+}
